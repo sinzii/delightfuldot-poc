@@ -6,12 +6,7 @@ const run = async () => {
 
   const start = printMemoryUsage('Start running benchmark');
 
-  const api = await ApiPromise.create({ provider: new WsProvider(POLKADOT_ENDPOINTS)} )
-
-  printMemoryUsage('After API initialization');
-
-  const balances = await api.query.system.account('5H4ADToRqTXEeHfmw8VGK8UEG3ehQNCAaoJLsdaUXijrqsUt');
-  console.log('Balances:', balances.toHuman());
+  await ApiPromise.create({ provider: new WsProvider(POLKADOT_ENDPOINTS)} )
 
   const end = printMemoryUsage();
 

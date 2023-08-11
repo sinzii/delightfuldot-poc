@@ -1,4 +1,3 @@
-import { ApiPromise, WsProvider } from "@polkadot/api";
 import { printMemoryUsage } from "../util";
 import { DelightfulApi } from "../poc/delighfuldot";
 
@@ -7,12 +6,7 @@ const run = async () => {
 
   const start = printMemoryUsage('Start running benchmark');
 
-  const api = await DelightfulApi.create(POLKADOT_ENDPOINTS);
-
-  printMemoryUsage('After API initialization');
-
-  const balances = await api.query.system.account('5H4ADToRqTXEeHfmw8VGK8UEG3ehQNCAaoJLsdaUXijrqsUt');
-  console.log('Balances:', balances);
+  await DelightfulApi.create(POLKADOT_ENDPOINTS);
 
   const end = printMemoryUsage();
 
