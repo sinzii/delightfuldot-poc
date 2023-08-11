@@ -4,7 +4,7 @@ import { printMemoryUsage } from "../util";
 const run = async () => {
   const POLKADOT_ENDPOINTS = 'wss://rpc.polkadot.io';
 
-  const start = printMemoryUsage('Start running benchmark');
+  const start = printMemoryUsage('Start running profiling');
 
   await ApiPromise.create({ provider: new WsProvider(POLKADOT_ENDPOINTS)} )
 
