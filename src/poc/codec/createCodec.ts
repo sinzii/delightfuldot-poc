@@ -8,18 +8,6 @@ export function normalizeIdent(ident: string) {
   return ident.replace(/(?:[^\p{ID_Continue}]|_)+(.)/gu, (_, $1: string) => $1.toUpperCase())
 }
 
-export function normalizeDocs(docs: string[] | undefined): string {
-  return docs?.join("\n") ?? ""
-}
-
-export function normalizePackageName(name: string) {
-  return name.replace(/[A-Z]/g, (x) => `-` + x.toLowerCase())
-}
-
-export function normalizeTypeName(name: string) {
-  return normalizeIdent(name).replace(/^./, (x) => x.toUpperCase())
-}
-
 const optionInnerVisitor = new $.CodecVisitor<$.AnyCodec | null>()
   .add($.option, (_codec, $some) => $some)
   .fallback(() => null)
