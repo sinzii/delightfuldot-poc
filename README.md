@@ -6,7 +6,7 @@
 
 Before running profiles or benchmarks, make sure to run `npm run build` first to compile the source code to JavaScript, compiled code will be put in `dist` folder.
 
-## Benchmark connecting to multiple network endpoints
+## Benchmark memory consumption when connecting to multiple network endpoints
 
 Benchmarking scripts are located in folder `src/benchmarks`
 
@@ -28,7 +28,7 @@ E.g 2: Connect to `100` of network endpoints via `polkadotapi`
 node dist/benchmarks/benchmark_connect_multiple_endpoints.js -n 100 -l polkadotapi
 ```
 
-### Benchmark results
+### Memory Consumption Benchmark Result
 The benchmark was running on a Macbook Pro M1 / 32GB RAM - 512GB Storage
 
 | Number of network endpoints | @polkadot/api | delightfuldot |
