@@ -30,7 +30,7 @@ node dist/benchmarks/benchmark_connect_multiple_endpoints.js -l polkadotapi -n 1
 
 ### Memory consumption benchmark result
 
-The benchmark was running on a Macbook Pro M1 / 32GB RAM - 512GB Storage
+The benchmark was running on a Macbook Pro M1 / 32GB RAM - 512GB Storage, NodeJS v18.14.2
 
 The memory consumption can be varied over time depending on various reasons. Below numbers are the average results of 5 consecutive runnings.
 
