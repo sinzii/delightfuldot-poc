@@ -1,5 +1,5 @@
 import { network_endpoints, printMemoryUsage } from "../util";
-import { DelightfulApi } from "../poc/delighfuldot";
+import { DelightfulApi } from "../poc/delightfuldot";
 import { extractArgs } from "../util/extractArgs";
 import { ApiPromise, WsProvider } from "@polkadot/api";
 

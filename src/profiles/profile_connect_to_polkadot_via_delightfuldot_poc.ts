@@ -1,5 +1,5 @@
 import { printMemoryUsage } from "../util";
-import { DelightfulApi } from "../poc/delighfuldot";
+import { DelightfulApi } from "../poc/delightfuldot";
 
 const run = async () => {
   const POLKADOT_ENDPOINTS = 'wss://rpc.polkadot.io';
