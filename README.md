@@ -39,10 +39,6 @@ The benchmark was running on a Macbook Pro M1 / 32GB RAM - 512GB Storage
 | 50  | ~ 464 MB  | ~ 67.1 MB |
 | 100  | ~ 829 MB  | ~ 132 MB |
 
-
-### Benchmark decoding Polkadot Network metadata raw hex
-
-
 ## Profiling
 
 Profiling scripts are located in folder `src/profiles`
