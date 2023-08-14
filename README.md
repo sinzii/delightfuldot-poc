@@ -28,16 +28,16 @@ E.g 2: Connect to `100` of network endpoints via `polkadotapi`
 node dist/benchmarks/benchmark_connect_multiple_endpoints.js -n 100 -l polkadotapi
 ```
 
-### Memory Consumption Benchmark Result
+### Memory consumption benchmark result
 The benchmark was running on a Macbook Pro M1 / 32GB RAM - 512GB Storage
 
 | Number of network endpoints | @polkadot/api | delightfuldot |
 | ------------- | ------------- | ------------- |
-| 5  | ~ 48.91 MB  | ~ 4.2 MB |
-| 10  | ~ 105 MB  | ~ 15.8 MB |
-| 20  | ~ 224 MB  | ~ 20.4 MB | 
-| 50  | ~ 464 MB  | ~ 67.1 MB |
-| 100  | ~ 829 MB  | ~ 132 MB |
+| 5  | ~ 50 MB  | ~ 12 MB |
+| 10  | ~ 105 MB  | ~ 17 MB |
+| 20  | ~ 210 MB  | ~ 35 MB | 
+| 50  | ~ 470 MB  | ~ 80 MB |
+| 100  | ~ 830 MB  | ~ 140 MB |
 
 ## Profiling
 
