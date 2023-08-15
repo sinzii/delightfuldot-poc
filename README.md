@@ -36,10 +36,10 @@ The memory consumption can be varied over time depending on various reasons. Bel
 
 | Number of network endpoints | @polkadot/api | delightfuldot |
 | ------------- | ------------- | ------------- |
-| 5  | ~ 50 MB  | ~ 12 MB |
-| 10  | ~ 105 MB  | ~ 17 MB |
-| 20  | ~ 210 MB  | ~ 35 MB | 
-| 50  | ~ 470 MB  | ~ 80 MB |
+| 5  | ~ 50 MB  | ~ 18 MB |
+| 10  | ~ 105 MB  | ~ 25 MB |
+| 20  | ~ 210 MB  | ~ 40 MB | 
+| 50  | ~ 470 MB  | ~ 90 MB |
 | 100  | ~ 830 MB  | ~ 140 MB |
 
 ## Profiling
