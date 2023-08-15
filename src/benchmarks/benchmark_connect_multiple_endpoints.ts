@@ -37,7 +37,7 @@ const run = async () => {
 
       return getApi(endpoint)
         .then(async api => {
-          const balances = await api.query.system.account('5H4ADToRqTXEeHfmw8VGK8UEG3ehQNCAaoJLsdaUXijrqsUt');
+          const balances = await api.query.system.account('5GXzn4PHsm5SuoqB8xTLp1YtVyr63ZoPB1jK92DNBuEsAXvp');
           console.log(`Run api.query.system.account on ${no} - ${endpoint}, result: `, formatResult(balances));
 
           // const props = await api.rpc.system.properties();

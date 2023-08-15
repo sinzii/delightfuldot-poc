@@ -11,7 +11,7 @@ const run = async () => {
   console.log(api.consts.system.blockLength)
 
   // Storage query
-  console.log(await api.query.system.account('5CuDsD8YgsEfbDJifNcfbju5PcwE5VPRvbboKdNhvnu3MUgZ'))
+  console.log(await api.query.system.account('5GXzn4PHsm5SuoqB8xTLp1YtVyr63ZoPB1jK92DNBuEsAXvp'))
 
   await api.disconnect();
 }
