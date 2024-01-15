@@ -4,7 +4,7 @@ export const network_endpoints = [
     'wss://kusama-rpc.polkadot.io',
     'wss://westend-rpc.polkadot.io',
     'wss://rococo-rpc.polkadot.io',
-    "wss://polkadot.api.onfinality.io/public-ws",
+    // "wss://polkadot.api.onfinality.io/public-ws",
     "wss://polkadot-public-rpc.blockops.network/ws",
     "wss://polkadot-rpc.dwellir.com",
     "wss://rpc.ibp.network/polkadot",
