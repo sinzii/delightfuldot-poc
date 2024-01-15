@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const util_1 = require("../util");
-const delightfuldot_1 = require("../poc/delightfuldot");
 const extractArgs_1 = require("../util/extractArgs");
 const api_1 = require("@polkadot/api");
+const delightfuldot_1 = require("delightfuldot");
 const run = async () => {
     const { numberOfEndpoints, library } = (0, extractArgs_1.extractArgs)();
     console.log(`Prepare to connect to ${numberOfEndpoints} endpoint(s)`);
