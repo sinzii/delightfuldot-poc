@@ -4,6 +4,7 @@ const util_1 = require("../util");
 const extractArgs_1 = require("../util/extractArgs");
 const api_1 = require("@polkadot/api");
 const delightfuldot_1 = require("delightfuldot");
+const delightfuldot_2 = require("../poc/delightfuldot");
 const run = async () => {
     const { numberOfEndpoints, library } = (0, extractArgs_1.extractArgs)();
     console.log(`Prepare to connect to ${numberOfEndpoints} endpoint(s)`);
@@ -14,6 +15,9 @@ const run = async () => {
     const getApi = (endpoint) => {
         if (library === 'delightfuldot') {
             return delightfuldot_1.DelightfulApi.create(endpoint);
+        }
+        else if (library === 'delightfuldot-poc') {
+            return delightfuldot_2.DelightfulApi.create(endpoint);
         }
         else {
             return api_1.ApiPromise.create({ provider: new api_1.WsProvider(endpoint, 2_500, {}, 20_000) });

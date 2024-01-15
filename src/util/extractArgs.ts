@@ -6,7 +6,7 @@ export const extractArgs = () => {
   const library = args['l'];
   console.log(args);
 
-  if (!['delightfuldot', 'polkadotapi'].includes(library)) {
+  if (!['delightfuldot', 'polkadotapi', 'delightfuldot-poc'].includes(library)) {
     throw new Error('Please select between `delighfuldot` OR `polkadotapi` via argument `l`, e.g: -l polkadotapi OR -l delightfuldot')
   }
 
