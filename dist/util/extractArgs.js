@@ -10,8 +10,8 @@ const extractArgs = () => {
     const numberOfEndpoints = parseInt(args['n']) || 10;
     const library = args['l'];
     console.log(args);
-    if (!['delightfuldot', 'polkadotapi', 'delightfuldot-poc'].includes(library)) {
-        throw new Error('Please select between `delighfuldot` OR `polkadotapi` via argument `l`, e.g: -l polkadotapi OR -l delightfuldot');
+    if (!['dedot', 'polkadotapi', 'delightfuldot-poc'].includes(library)) {
+        throw new Error('Please select between `dedot`, `delightfuldot-poc` OR `polkadotapi` via argument `l`, e.g: -l polkadotapi OR -l dedot');
     }
     return {
         numberOfEndpoints,

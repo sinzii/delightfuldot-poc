@@ -1,7 +1,7 @@
 import { network_endpoints, printMemoryUsage } from "../util";
 import { extractArgs } from "../util/extractArgs";
 import { ApiPromise, WsProvider } from "@polkadot/api";
-import { DelightfulApi } from "delightfuldot";
+import { Dedot } from "dedot";
 import { DelightfulApi as DelightfulApiPoC } from "../poc/delightfuldot";
 
 
@@ -17,8 +17,8 @@ const run = async () => {
   let connected = 0, connectedUrls: string[] = [];
 
   const getApi = (endpoint: string) => {
-    if (library === 'delightfuldot') {
-      return DelightfulApi.create(endpoint);
+    if (library === 'dedot') {
+      return Dedot.new(endpoint);
     } else if (library === 'delightfuldot-poc') {
       return DelightfulApiPoC.create(endpoint)
     } else {

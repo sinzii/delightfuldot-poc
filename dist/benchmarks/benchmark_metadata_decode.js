@@ -9,8 +9,8 @@ const main = () => {
     console.time('@polkadot/api Decode Metadata Took');
     new types_1.Metadata(new types_1.TypeRegistry(), METADATA);
     console.timeEnd('@polkadot/api Decode Metadata Took');
-    console.time('scale-ts Decode Metadata Took');
+    console.time('subshape Decode Metadata Took');
     (0, metadata_1.decodeMetadata)((0, util_1.hexToU8a)(METADATA));
-    console.timeEnd('scale-ts Decode Metadata Took');
+    console.timeEnd('subshape Decode Metadata Took');
 };
 main();

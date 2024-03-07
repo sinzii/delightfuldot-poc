@@ -15,7 +15,7 @@ Benchmarking scripts are located in folder `src/benchmarks`
 node dist/benchmarks/benchmark_connect_multiple_endpoints.js -l [library] -n [numberOfNetworks]
 ```
 Where:
-- `[library]` is the library that will be used to connect: `polkadotapi`, `delightfuldot` or `delightfuldot-poc`
+- `[library]` is the library that will be used to connect: `polkadotapi`, `dedot` or `delightfuldot-poc`
 - `[numberOfNetworks]` is the number of [network endpoints](https://github.com/sinzii/delightfuldot-poc/blob/main/src/util/networks.ts) to connect (`5`, `10`, `20`, `50`, `100`)
 
 E.g 1: Connect to `100` of network endpoints via `delightfuldot`
